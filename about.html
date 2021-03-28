@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="header.css">
+  </head>
+  
+  <style>
+    @font-face { font-family: SpaceMono; src: url('fonts/SpaceMono-Regular.ttf'); } 
+    @font-face { font-family: SpaceMonoBold; src: url('fonts/SpaceMono-Bold.ttf'); } 
+    @font-face { font-family: SpaceMonoItalic; src: url('fonts/SpaceMono-Italic.ttf'); } 
+    body {
+       font-family: SpaceMono
+    }
+  </style>
+
+  <body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button" style="color: blue;">LINDSEY GUAN</a>
+      <div class="w3-right w3-hide-small">
+        <a href="about.html" class="w3-bar-item w3-button">about</a>
+      </div>
+    </div>
+  </div>      
+    
+  <div class="float-container">
+    <div class="float-child" style="margin-left: 100px; width: 30%;">
+      <div>
+        My name is Lindsey Guan and I'm a portrait and editorial photographer based in the SF Bay Area.
+        <br><br>
+        I'm also passionate about design and photography education.
+        <br><br><br>
+        <a href="https://www.instagram.com/guanlindsey/" target="_blank" class="button">Instagram</a>
+        <a href="mailto: lindseyguan7@gmail.com" target="_blank" class="button">Email</a>
+      </div>
+    </div>
+    
+    <div class="float-child">
+      <img src="images/me.jpg" style="width: 70%;">
+    </div>
+  </div>
+  
+  
+  <script>
+    // keep header static during scroll
+    window.onscroll = function() {myFunction()};
+    var header = document.getElementById("topBar");
+    var sticky = header.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    } 
+  </script>
+  </body>
+</html>
