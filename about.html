@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="thumbnail-gallery.css">
     <link rel="stylesheet" href="header.css">
 
@@ -22,20 +23,27 @@
     <a class="navbar-brand" style="color: black" href="about.html">about</a>
 </nav>   
     
-  <div class="float-container">
-    <div class="float-child" style="margin-left: 100px; width: 30%;">
-      <div>
-        My name is Lindsey Guan and I'm a portrait and editorial photographer based in the SF Bay Area.
-        <br><br>
-        I'm also passionate about design and photography education.
-        <br><br><br>
-        <a href="https://www.instagram.com/guanlindsey/" target="_blank" class="button">Instagram</a>
-        <a href="mailto: lindseyguan7@gmail.com" target="_blank" class="button">Email</a>
+  <div class="container gallery-container">
+    <div class="tz-gallery">
+      <div class="row">
+        <div class="col-sm-10 col-md-8">
+          <div class="thumbnail">
+            My name is Lindsey Guan and I'm a portrait and editorial photographer based in the SF Bay Area.
+            <br><br>
+            I'm also passionate about design and photography education.
+            <br><br><br>
+            Don't be a stranger!
+            <br><br>
+            <a href="https://www.instagram.com/guanlindsey/" target="_blank" class="button">Instagram</a>
+            <a href="mailto: lindseyguan7@gmail.com" target="_blank" class="button">Email</a>
+          </div>
+        </div>
+        <div class="col-sm-10 col-md-8">
+          <div class="thumbnail">
+            <img src="images/me.jpg" style="width: 70%;">
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <div class="float-child">
-      <img src="images/me.jpg" style="width: 70%;">
     </div>
   </div>
   
@@ -52,6 +60,9 @@
         header.classList.remove("sticky");
       }
     } 
+  </script>
+  <script>
+    baguetteBox.run('.tz-gallery');
   </script>
   </body>
 </html>
