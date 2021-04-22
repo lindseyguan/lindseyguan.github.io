@@ -39,9 +39,9 @@ div.gallery img {
   height: auto;
 }
 
-img {
+/* img {
   pointer-events: none;
-}
+} */
 
 a.button {
     display: inline-block;
